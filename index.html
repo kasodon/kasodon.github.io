@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Currency Converter by Edewor Onyedika</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" rel="stylesheet">
+        <!-- core stylesheet -->
+        <link rel="stylesheet" href="tools/css/currency.css" />
+	</head>
+
+		<body>
+			<div class="container-fluid">
+
+				
+				
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-xs-12">
+								<header class="text-center">
+									<h1>Currency Converter</h1>
+									<h4 class="text-center">An UDACITY project made by Edewor Onyedika</h4>
+								</header>
+                                    </div>
+                                    </div>
+            </div>
+                                
+                                       
+                                     
+                                  <div class="container">
+                                      
+                                <div id="form">
+                                
+                                    
+                                    
+									<div class="text-center">
+										<label for="name">From</label>
+										<div class="select-wrapper">
+												<select name="demo-category" id="select" >
+                                                    <option></option>
+												</select>
+											</div>
+									</div>
+                                    
+                                    
+                                    
+                                    
+									<div class="text-center">
+											<label for="demo-category">To</label>
+											<div class="select-wrapper">
+												<select name="demo-category" id="select2">
+                                                    <option></option>
+												</select>
+											</div>
+										</div>
+                                    
+                                    
+                                    
+                                    
+									<div class="text-center">
+										<label for="message">Amount</label>
+										<input id="amount" type="text" onchange="curr();">
+									</div>
+                                   
+                                    
+                                    
+                                    
+                                    <div class="text-center">
+									
+                                        <button class="button" onclick="curr();">Convert</button>
+									
+                                    </div>
+                                    
+                                    
+                                    
+                                    <h4 class="text-center"><span id="answer"></span></h4>
+                                
+                                
+                                
+                                
+                                      </div>  
+                                </div>
+                                        
+                                        
+                                        
+                                        
+							
+				
+					
+
+				
+
+				
+
+				
+
+
+		<!-- Scripts -->
+        
+         <!-- Bootstrap core JavaScript -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        
+        <script src="idb.js"></script>
+<script src="idbi.js"></script>
+        <script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('sw.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
+</script>
+			
+
+	</body>
+</html>
